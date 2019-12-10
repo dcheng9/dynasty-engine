@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Inputable">
+    <Position X="1" Y="0.75" Width="4.25" />
+    <Members>
+      <Method Name="~Inputable" Hidden="true" />
+      <Method Name="Inputable" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAggAFBgEAA=</HashCode>
+      <FileName>Dynasty Engine\Game Object\Inputable.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameObject">
+    <Position X="6" Y="0.75" Width="2.25" />
+    <Members>
+      <Method Name="~GameObject" Hidden="true" />
+      <Method Name="GameObject" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>ABAAAAAABAAEAQgAAAAAAAAAAAAAAAAABAigAAIAAAA=</HashCode>
+      <FileName>Dynasty Engine\Game Object\GameObject.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="currentScene" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Scene">
+    <Position X="8.75" Y="0.75" Width="5" />
+    <Members>
+      <Method Name="~Scene" Hidden="true" />
+      <Method Name="AddToScene" Hidden="true" />
+      <Field Name="AlarmMgr" Hidden="true" />
+      <Field Name="CameraMgr" Hidden="true" />
+      <Field Name="CollisionMgr" Hidden="true" />
+      <Method Name="Delete" Hidden="true" />
+      <Method Name="DeregisterAlarm" Hidden="true" />
+      <Method Name="DeregisterCollision" Hidden="true" />
+      <Method Name="DeregisterDraw" Hidden="true" />
+      <Method Name="DeregisterUpdate" Hidden="true" />
+      <Method Name="Draw" Hidden="true" />
+      <Field Name="DrawMgr" Hidden="true" />
+      <Method Name="Initialize" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="RegisterAlarm" Hidden="true" />
+      <Method Name="RegisterCollision" Hidden="true" />
+      <Method Name="RegisterDraw" Hidden="true" />
+      <Method Name="RegisterUpdate" Hidden="true" />
+      <Method Name="RemoveFromScene" Hidden="true" />
+      <Method Name="Scene" Hidden="true" />
+      <Method Name="SceneEnd" Hidden="true" />
+      <Method Name="SetCollisionPair" Hidden="true" />
+      <Method Name="SetCollisionSelf" Hidden="true" />
+      <Method Name="Update" Hidden="true" />
+      <Field Name="UpdateMgr" Hidden="true" />
+    </Members>
+    <AssociationLine Name="RegistrationBrkr" Type="SceneRegistrationBroker">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.062" Y="0.036" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>RAQAAiAACAEBAwAggEIAIAIAQBcAAAAQAgAggEAACAQ=</HashCode>
+      <FileName>Dynasty Engine\Scene\Scene.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="RegistrationBrkr" />
+      <Field Name="KeyEventMgr" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SceneRegistrationBroker">
+    <Position X="14.75" Y="0.75" Width="3" />
+    <Members>
+      <Method Name="~SceneRegistrationBroker" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="SceneRegistrationBroker" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAIAAAAAAAAAAAAAQAAAAEAAAAAgAAAAAAg=</HashCode>
+      <FileName>Dynasty Engine\Scene\SceneRegistrationBroker.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KeyboardEventManager">
+    <Position X="7.75" Y="5" Width="4.5" />
+    <Members>
+      <Method Name="~KeyboardEventManager" Hidden="true" />
+      <Method Name="KeyboardEventManager" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Typedef Name="KeyboardEventManager::KeyMgrMap" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Dynasty Engine\Managers\KeyboardEventManager.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAACAABAAAAAAAAQAAAEBAACAAAAgAAAAAAA=</HashCode>
+      <FileName>Dynasty Engine\Managers\KeyboardEventManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommandKeyEventRegistration">
+    <Position X="3" Y="4.75" Width="2.5" />
+    <Members>
+      <Method Name="~CommandKeyEventRegistration" Hidden="true" />
+      <Method Name="CommandKeyEventRegistration" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <AssociationLine Name="ptrMgr" Type="KeyboardEventManager" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.312" Y="6.627" />
+        <Point X="4.312" Y="7" />
+        <Point X="7.75" Y="7" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAEAAAAAAQAABAAAAAkAAAAAgA=</HashCode>
+      <FileName>Dynasty Engine\Scene\CommandKeyEventRegistration.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="input" />
+      <Field Name="ptrMgr" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CommandKeyEventDeregistration">
+    <Position X="0.5" Y="4.75" Width="2.5" />
+    <Members>
+      <Method Name="~CommandKeyEventDeregistration" Hidden="true" />
+      <Method Name="CommandKeyEventDeregistration" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <AssociationLine Name="ptrMgr" Type="KeyboardEventManager" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="1.75" Y="6.627" />
+        <Point X="1.75" Y="7" />
+        <Point X="7.75" Y="7" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAABEAAAAAAQAABAAAAAgAAAAAgA=</HashCode>
+      <FileName>Dynasty Engine\Scene\CommandKeyEventDeregistration.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="input" />
+      <Field Name="ptrMgr" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CommandBase">
+    <Position X="2.25" Y="2.75" Width="1.5" />
+    <Members>
+      <Method Name="~CommandBase" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Dynasty Engine\Scene\CommandBase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SingleKeyEventManager">
+    <Position X="12.75" Y="5" Width="3.75" />
+    <Members>
+      <Method Name="~SingleKeyEventManager" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="SingleKeyEventManager" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAGIAAAAAAABAAICAAAAAAAAAJCAAAAAAgAAAgAAA=</HashCode>
+      <FileName>Dynasty Engine\Managers\SingleKeyEventManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

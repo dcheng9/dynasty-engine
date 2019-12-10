@@ -1,0 +1,646 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Dynasty Engine\Dynasty.cpp">
+      <Filter>Application\Dynasty Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynasty Engine\main.cpp">
+      <Filter>Application\Dynasty Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynasty Engine\Managers\ModelManager.cpp">
+      <Filter>Application\Dynasty Engine\Managers\Asset Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynasty Engine\Managers\ShaderManager.cpp">
+      <Filter>Application\Dynasty Engine\Managers\Asset Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynasty Engine\Managers\TextureManager.cpp">
+      <Filter>Application\Dynasty Engine\Managers\Asset Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynasty Engine\Managers\CameraManager.cpp">
+      <Filter>Application\Dynasty Engine\Managers\Other Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynasty Engine\Managers\SceneManager.cpp">
+      <Filter>Application\Dynasty Engine\Managers\Other Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynasty Engine\Scene\Scene.cpp">
+      <Filter>Application\Dynasty Engine\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynasty Engine\Scene\SceneRegistrationBroker.cpp">
+      <Filter>Application\Dynasty Engine\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynasty Engine\Game Object\Updatable.cpp">
+      <Filter>Application\Dynasty Engine\Game Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynasty Engine\Game Object\Drawable.cpp">
+      <Filter>Application\Dynasty Engine\Game Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynasty Engine\Game Object\Alarmable.cpp">
+      <Filter>Application\Dynasty Engine\Game Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynasty Engine\Game Object\AlarmMarker.cpp">
+      <Filter>Application\Dynasty Engine\Game Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynasty Engine\Managers\DrawableManager.cpp">
+      <Filter>Application\Dynasty Engine\Managers\Game Object Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynasty Engine\Managers\UpdatableManager.cpp">
+      <Filter>Application\Dynasty Engine\Managers\Game Object Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynasty Engine\Managers\AlarmableManager.cpp">
+      <Filter>Application\Dynasty Engine\Managers\Game Object Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynasty Engine\Game Object\Inputable.cpp">
+      <Filter>Application\Dynasty Engine\Game Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynasty Engine\Managers\KeyboardEventManager.cpp">
+      <Filter>Application\Dynasty Engine\Managers\Game Object Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynasty Engine\Managers\SingleKeyEventManager.cpp">
+      <Filter>Application\Dynasty Engine\Managers\Game Object Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynasty Engine\Managers\TimeManager.cpp">
+      <Filter>Application\Dynasty Engine\Managers\Other Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynasty Engine\Scene\CommandAlarmDeregistration.cpp">
+      <Filter>Application\Dynasty Engine\Scene\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynasty Engine\Scene\CommandAlarmRegistration.cpp">
+      <Filter>Application\Dynasty Engine\Scene\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynasty Engine\Scene\CommandDrawDeregistration.cpp">
+      <Filter>Application\Dynasty Engine\Scene\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynasty Engine\Scene\CommandDrawRegistration.cpp">
+      <Filter>Application\Dynasty Engine\Scene\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynasty Engine\Scene\CommandKeyEventDeregistration.cpp">
+      <Filter>Application\Dynasty Engine\Scene\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynasty Engine\Scene\CommandKeyEventRegistration.cpp">
+      <Filter>Application\Dynasty Engine\Scene\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynasty Engine\Scene\CommandUpdateDeregistration.cpp">
+      <Filter>Application\Dynasty Engine\Scene\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynasty Engine\Scene\CommandUpdateRegistration.cpp">
+      <Filter>Application\Dynasty Engine\Scene\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynasty Engine\Other Classes\FreezeTime.cpp">
+      <Filter>Application\Dynasty Engine\Other Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynasty Engine\Game Object\GameObject.cpp">
+      <Filter>Application\Dynasty Engine\Game Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynasty Engine\Scene\CommandSceneAddObject.cpp">
+      <Filter>Application\Dynasty Engine\Scene\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynasty Engine\Scene\CommandSceneRemoveObject.cpp">
+      <Filter>Application\Dynasty Engine\Scene\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Test Game\GameInitialize.cpp">
+      <Filter>Application\Test Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Test Game\LoadAllResources.cpp">
+      <Filter>Application\Test Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Test Game\Scenes\SceneTest.cpp">
+      <Filter>Application\Test Game\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Test Game\Objects\Spaceship.cpp">
+      <Filter>Application\Test Game\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Test Game\Objects\Bullet.cpp">
+      <Filter>Application\Test Game\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Test Game\Other\BulletFactory.cpp">
+      <Filter>Application\Test Game\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynasty Engine\Scene\CommandSceneChange.cpp">
+      <Filter>Application\Dynasty Engine\Scene\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Test Game\Scenes\IntroScene.cpp">
+      <Filter>Application\Test Game\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Test Game\Objects\Box.cpp">
+      <Filter>Application\Test Game\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynasty Engine\Managers\CollisionManager.cpp">
+      <Filter>Application\Dynasty Engine\Managers\Game Object Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynasty Engine\Collider\BoundingSphere.cpp">
+      <Filter>Application\Dynasty Engine\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynasty Engine\Other Classes\MathTools.cpp">
+      <Filter>Application\Dynasty Engine\Other Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynasty Engine\Game Object\Collidable.cpp">
+      <Filter>Application\Dynasty Engine\Game Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynasty Engine\Collider\Visualizer.cpp">
+      <Filter>Application\Dynasty Engine\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="Test Game\Objects\Cottage.cpp">
+      <Filter>Application\Test Game\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynasty Engine\Scene\CommandVisualizerRender.cpp">
+      <Filter>Application\Dynasty Engine\Scene\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Test Game\Other\GodCamera.cpp">
+      <Filter>Application\Test Game\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynasty Engine\Terrain\TerrainObject.cpp">
+      <Filter>Application\Dynasty Engine\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynasty Engine\Managers\TerrainManager.cpp">
+      <Filter>Application\Dynasty Engine\Managers\Asset Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynasty Engine\Managers\SceneTerrainManager.cpp">
+      <Filter>Application\Dynasty Engine\Managers\Other Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynasty Engine\Terrain\CellIterator.cpp">
+      <Filter>Application\Dynasty Engine\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynasty Engine\Collider\AABB.cpp">
+      <Filter>Application\Dynasty Engine\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynasty Engine\Collider\OBB.cpp">
+      <Filter>Application\Dynasty Engine\Collider</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="_Libs">
+      <UniqueIdentifier>{1392bc0c-ded2-42a7-9ec1-333be4dadedd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application">
+      <UniqueIdentifier>{aef3393e-06a5-4f08-bf4a-3b6be12d1e04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\GLFW">
+      <UniqueIdentifier>{d22a518f-dd11-48ea-8247-bd82c5928233}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\GLFW\include">
+      <UniqueIdentifier>{f1613e77-99f1-482b-bccf-12b6784f3aa0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\GLFW\lib">
+      <UniqueIdentifier>{c350b52d-8efa-4eca-a258-d57d45c43245}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\SB6">
+      <UniqueIdentifier>{189a2178-2765-49df-b052-8eca24a60d61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\SB6\lib">
+      <UniqueIdentifier>{841af908-0674-4949-8aa0-292e3e84a88b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\SB6\include">
+      <UniqueIdentifier>{d2f5d78b-d9cf-4bd9-bd4e-df7522de593c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\File">
+      <UniqueIdentifier>{fb44cdb2-f236-4b3b-833e-e9e2c3af59cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\File\lib">
+      <UniqueIdentifier>{23abe339-ce80-4523-b0f0-23747e3f512f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\File\include">
+      <UniqueIdentifier>{323b20aa-e08c-4260-84b1-1e85121a9e17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\Math">
+      <UniqueIdentifier>{9fcc2c9b-3e4f-4ab2-a0c5-3099cdf90300}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\Math\lib">
+      <UniqueIdentifier>{ea7cbe8f-1aeb-4ad2-bd4e-fa300408bd5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\Math\include">
+      <UniqueIdentifier>{5d126765-1977-4213-89fb-e004f6468da5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\AzulCore">
+      <UniqueIdentifier>{d3f91089-c7e6-474d-8376-afd372d35a8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\AzulCore\lib">
+      <UniqueIdentifier>{8a854cfc-9294-4797-b476-0b2feacdd62f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\AzulCore\include">
+      <UniqueIdentifier>{60eabb98-a714-4df4-8fa1-3fb92ea55bd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Dynasty Engine">
+      <UniqueIdentifier>{45b5171a-1b42-4e1d-bd88-2ef08f02380e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Dynasty Engine\Managers">
+      <UniqueIdentifier>{7f08959d-3ea1-4c2f-863d-dab659f63710}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Dynasty Engine\Managers\Asset Managers">
+      <UniqueIdentifier>{117709bd-8c64-4a6b-90e5-08309bac8037}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Dynasty Engine\Managers\Other Managers">
+      <UniqueIdentifier>{0689e19a-323e-49d0-87d2-dd8ca1654bc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Dynasty Engine\Game Object">
+      <UniqueIdentifier>{408e2fe5-bf11-4c85-897e-2250683cf3b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Dynasty Engine\Scene">
+      <UniqueIdentifier>{806ecab9-7186-4fc4-91cd-b5f1b713b89f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Dynasty Engine\Managers\Game Object Managers">
+      <UniqueIdentifier>{f4829d12-091e-4ffe-907d-86acb2b67454}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Dynasty Engine\Scene\Commands">
+      <UniqueIdentifier>{fa2c92f5-6ec8-4541-9c0e-be9d3db37e0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Dynasty Engine\Other Classes">
+      <UniqueIdentifier>{d8172c1a-004e-41ec-b57e-0ccea483f272}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Test Game">
+      <UniqueIdentifier>{349b0cf0-0244-43a0-bab2-d05a02fb2557}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Test Game\Scenes">
+      <UniqueIdentifier>{9ed15630-497a-4d37-84e9-3ce0eb600a93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Test Game\Objects">
+      <UniqueIdentifier>{1fbb1821-6e18-40d9-8b30-5fc35c48d3b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Test Game\Other">
+      <UniqueIdentifier>{b2b0c687-0660-40ca-9a24-a601deeafda3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Dynasty Engine\Collider">
+      <UniqueIdentifier>{bc371b68-d4c3-47e1-9ace-562fba22aa59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Dynasty Engine\Terrain">
+      <UniqueIdentifier>{8178a3a1-b40a-43b8-8fe9-ec914dd47de7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\dist\GLFW\include\GL\glfw.h">
+      <Filter>_Libs\GLFW\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\arcball.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\object.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\sb6.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\sb6ext.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\sb6ktx.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\sb6mfile.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\shader.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\vmath.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\GL\gl3w.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\GL\glcorearb.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\GL\glext.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\GL\glxext.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\GL\wglext.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\File\include\File.h">
+      <Filter>_Libs\File\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Align16.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Constants.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Enum.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\MathEngine.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Matrix.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Util.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Vect.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\AzulCore.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\AzulFileHdr.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\AzulHelper.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Camera.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\DebugOut.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Engine.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GpuVertTypes.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_ColorByPosition.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_ColorNoTexture.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_ColorNoTextureLight.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_Sprite.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_SpriteBox.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_TextureFlat.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_TextureLight.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_WireframeAutoColor.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_WireframeConstantColor.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Image.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Keyboard.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\LibrarySetup.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Model.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Mouse.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Rect.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\ShaderObject.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Texture.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\TextureTGA.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\MathApp.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Quat.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\QuatApp.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\VectApp.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Dynasty.h">
+      <Filter>Application\Dynasty Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Managers\ModelManager.h">
+      <Filter>Application\Dynasty Engine\Managers\Asset Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Managers\ShaderManager.h">
+      <Filter>Application\Dynasty Engine\Managers\Asset Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Managers\TextureManager.h">
+      <Filter>Application\Dynasty Engine\Managers\Asset Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Managers\CameraManager.h">
+      <Filter>Application\Dynasty Engine\Managers\Other Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Game Object\GameObject.h">
+      <Filter>Application\Dynasty Engine\Game Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Game Object\Updatable.h">
+      <Filter>Application\Dynasty Engine\Game Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Game Object\Drawable.h">
+      <Filter>Application\Dynasty Engine\Game Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Scene\Scene.h">
+      <Filter>Application\Dynasty Engine\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Managers\SceneManager.h">
+      <Filter>Application\Dynasty Engine\Managers\Other Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Scene\SceneRegistrationBroker.h">
+      <Filter>Application\Dynasty Engine\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Game Object\Alarmable.h">
+      <Filter>Application\Dynasty Engine\Game Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Game Object\AlarmMarker.h">
+      <Filter>Application\Dynasty Engine\Game Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Managers\DrawableManager.h">
+      <Filter>Application\Dynasty Engine\Managers\Game Object Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Managers\UpdatableManager.h">
+      <Filter>Application\Dynasty Engine\Managers\Game Object Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Managers\AlarmableManager.h">
+      <Filter>Application\Dynasty Engine\Managers\Game Object Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Game Object\Inputable.h">
+      <Filter>Application\Dynasty Engine\Game Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Managers\KeyboardEventManager.h">
+      <Filter>Application\Dynasty Engine\Managers\Game Object Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Managers\SingleKeyEventManager.h">
+      <Filter>Application\Dynasty Engine\Managers\Game Object Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Managers\TimeManager.h">
+      <Filter>Application\Dynasty Engine\Managers\Other Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Scene\CommandAlarmDeregistration.h">
+      <Filter>Application\Dynasty Engine\Scene\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Scene\CommandAlarmRegistration.h">
+      <Filter>Application\Dynasty Engine\Scene\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Scene\CommandBase.h">
+      <Filter>Application\Dynasty Engine\Scene\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Scene\CommandDrawDeregistration.h">
+      <Filter>Application\Dynasty Engine\Scene\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Scene\CommandDrawRegistration.h">
+      <Filter>Application\Dynasty Engine\Scene\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Scene\CommandKeyEventDeregistration.h">
+      <Filter>Application\Dynasty Engine\Scene\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Scene\CommandKeyEventRegistration.h">
+      <Filter>Application\Dynasty Engine\Scene\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Scene\CommandUpdateDeregistration.h">
+      <Filter>Application\Dynasty Engine\Scene\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Scene\CommandUpdateRegistration.h">
+      <Filter>Application\Dynasty Engine\Scene\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Other Classes\FreezeTime.h">
+      <Filter>Application\Dynasty Engine\Other Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Scene\CommandSceneAddObject.h">
+      <Filter>Application\Dynasty Engine\Scene\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Scene\CommandSceneRemoveObject.h">
+      <Filter>Application\Dynasty Engine\Scene\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Test Game\Scenes\SceneTest.h">
+      <Filter>Application\Test Game\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Test Game\Objects\Spaceship.h">
+      <Filter>Application\Test Game\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Test Game\Objects\Bullet.h">
+      <Filter>Application\Test Game\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Test Game\Other\BulletFactory.h">
+      <Filter>Application\Test Game\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Scene\CommandSceneChange.h">
+      <Filter>Application\Dynasty Engine\Scene\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Test Game\Scenes\IntroScene.h">
+      <Filter>Application\Test Game\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Test Game\Objects\Box.h">
+      <Filter>Application\Test Game\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Collider\CollidableGroup.h">
+      <Filter>Application\Dynasty Engine\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Managers\CollisionManager.h">
+      <Filter>Application\Dynasty Engine\Managers\Game Object Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Game Object\Collidable.h">
+      <Filter>Application\Dynasty Engine\Game Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Scene\CommandCollisionTestSelf.h">
+      <Filter>Application\Dynasty Engine\Scene\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Scene\CommandCollisionDelete.h">
+      <Filter>Application\Dynasty Engine\Scene\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Scene\CommandCollisionDeregistration.h">
+      <Filter>Application\Dynasty Engine\Scene\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Scene\CommandCollisionRegistration.h">
+      <Filter>Application\Dynasty Engine\Scene\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Scene\CommandCollisionTestPair.h">
+      <Filter>Application\Dynasty Engine\Scene\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Collider\BoundingSphere.h">
+      <Filter>Application\Dynasty Engine\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Other Classes\MathTools.h">
+      <Filter>Application\Dynasty Engine\Other Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Collider\Visualizer.h">
+      <Filter>Application\Dynasty Engine\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="Test Game\Objects\Cottage.h">
+      <Filter>Application\Test Game\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Scene\CommandVisualizerRender.h">
+      <Filter>Application\Dynasty Engine\Scene\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Collider\CollisionVolume.h">
+      <Filter>Application\Dynasty Engine\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="Test Game\Other\GodCamera.h">
+      <Filter>Application\Test Game\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Terrain\TerrainObject.h">
+      <Filter>Application\Dynasty Engine\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Managers\TerrainManager.h">
+      <Filter>Application\Dynasty Engine\Managers\Asset Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Managers\SceneTerrainManager.h">
+      <Filter>Application\Dynasty Engine\Managers\Other Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Terrain\TerrainCell.h">
+      <Filter>Application\Dynasty Engine\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Scene\CommandCollisionTestTerrain.h">
+      <Filter>Application\Dynasty Engine\Scene\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Terrain\CellIterator.h">
+      <Filter>Application\Dynasty Engine\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Collider\AABB.h">
+      <Filter>Application\Dynasty Engine\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Collider\OBB.h">
+      <Filter>Application\Dynasty Engine\Collider</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\dist\GLFW\lib\GLFW_Debug.lib">
+      <Filter>_Libs\GLFW\lib</Filter>
+    </Library>
+    <Library Include="..\dist\SB6\lib\sb6_Debug.lib">
+      <Filter>_Libs\SB6\lib</Filter>
+    </Library>
+    <Library Include="..\dist\File\lib\File_Debug.lib">
+      <Filter>_Libs\File\lib</Filter>
+    </Library>
+    <Library Include="..\dist\Math\lib\MathEngine_Debug.lib">
+      <Filter>_Libs\Math\lib</Filter>
+    </Library>
+    <Library Include="..\dist\AzulCore\lib\AzulCore_Debug.lib">
+      <Filter>_Libs\AzulCore\lib</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\DynastyDiagram.cd">
+      <Filter>Application\Dynasty Engine</Filter>
+    </None>
+    <None Include="AlarmSystem.cd">
+      <Filter>Application\Dynasty Engine</Filter>
+    </None>
+    <None Include="InputSystem.cd">
+      <Filter>Application\Dynasty Engine</Filter>
+    </None>
+    <None Include="CollisionSystem.cd">
+      <Filter>Application\Dynasty Engine</Filter>
+    </None>
+    <None Include="Dynasty Engine\Collider\TerrainSystem.cd">
+      <Filter>Application\Dynasty Engine</Filter>
+    </None>
+  </ItemGroup>
+</Project>

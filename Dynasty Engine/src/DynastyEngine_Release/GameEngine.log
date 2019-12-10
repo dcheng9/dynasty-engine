@@ -1,0 +1,121 @@
+﻿Build started 6/28/2017 3:26:04 PM.
+     1>Project "F:\Documents\Stuff\School Stuff\Junior\Spring Quarter\GAM377 - Game Engine 2\berthiaume2016spring_gam377\student\dcheng\Sprint 9\Dynasty Engine\src\GameEngine.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"DynastyEngine_Release\\" /Fd"DynastyEngine_Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "Dynasty Engine\Collider\AABB.cpp" "Dynasty Engine\Collider\BoundingSphere.cpp" "Dynasty Engine\Collider\OBB.cpp" "Dynasty Engine\Collider\Visualizer.cpp" "Dynasty Engine\Dynasty.cpp" "Dynasty Engine\Game Object\Alarmable.cpp" "Dynasty Engine\Game Object\AlarmMarker.cpp" "Dynasty Engine\Game Object\Collidable.cpp" "Dynasty Engine\Game Object\Drawable.cpp" "Dynasty Engine\Game Object\GameObject.cpp" "Dynasty Engine\Game Object\Inputable.cpp" "Dynasty Engine\Game Object\Updatable.cpp" "Dynasty Engine\main.cpp" "Dynasty Engine\Managers\AlarmableManager.cpp" "Dynasty Engine\Managers\CameraManager.cpp" "Dynasty Engine\Managers\CollisionManager.cpp" "Dynasty Engine\Managers\DrawableManager.cpp" "Dynasty Engine\Managers\KeyboardEventManager.cpp" "Dynasty Engine\Managers\ModelManager.cpp" "Dynasty Engine\Managers\SceneManager.cpp" "Dynasty Engine\Managers\SceneTerrainManager.cpp" "Dynasty Engine\Managers\ShaderManager.cpp" "Dynasty Engine\Managers\SingleKeyEventManager.cpp" "Dynasty Engine\Managers\TerrainManager.cpp" "Dynasty Engine\Managers\TextureManager.cpp" "Dynasty Engine\Managers\TimeManager.cpp" "Dynasty Engine\Managers\UpdatableManager.cpp" "Dynasty Engine\Other Classes\FreezeTime.cpp" "Dynasty Engine\Other Classes\MathTools.cpp" "Dynasty Engine\Scene\CommandAlarmDeregistration.cpp" "Dynasty Engine\Scene\CommandAlarmRegistration.cpp" "Dynasty Engine\Scene\CommandDrawDeregistration.cpp" "Dynasty Engine\Scene\CommandDrawRegistration.cpp" "Dynasty Engine\Scene\CommandKeyEventDeregistration.cpp" "Dynasty Engine\Scene\CommandKeyEventRegistration.cpp" "Dynasty Engine\Scene\CommandSceneAddObject.cpp" "Dynasty Engine\Scene\CommandSceneChange.cpp" "Dynasty Engine\Scene\CommandSceneRemoveObject.cpp" "Dynasty Engine\Scene\CommandUpdateDeregistration.cpp" "Dynasty Engine\Scene\CommandUpdateRegistration.cpp" "Dynasty Engine\Scene\CommandVisualizerRender.cpp" "Dynasty Engine\Scene\Scene.cpp" "Dynasty Engine\Scene\SceneRegistrationBroker.cpp" "Dynasty Engine\Terrain\CellIterator.cpp" "Dynasty Engine\Terrain\TerrainObject.cpp" "Test Game\GameInitialize.cpp" "Test Game\LoadAllResources.cpp" "Test Game\Objects\Box.cpp" "Test Game\Objects\Bullet.cpp" "Test Game\Objects\Cottage.cpp" "Test Game\Objects\Spaceship.cpp" "Test Game\Other\BulletFactory.cpp" "Test Game\Other\GodCamera.cpp" "Test Game\Scenes\IntroScene.cpp" "Test Game\Scenes\SceneTest.cpp"
+         AABB.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\dynasty engine\collider\AABB.h(4): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         BoundingSphere.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\dynasty engine\collider\BoundingSphere.h(4): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         OBB.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\dynasty engine\collider\CollisionVolume.h(4): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         Visualizer.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\dynasty engine\collider\Visualizer.h(4): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         Dynasty.cpp
+     1>Dynasty Engine\Dynasty.cpp(1): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         Alarmable.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\dynasty engine\game object\Alarmable.h(4): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         AlarmMarker.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\dynasty engine\game object\AlarmMarker.h(4): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         Collidable.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\dynasty engine\game object\Collidable.h(4): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         Drawable.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\dynasty engine\game object\Drawable.h(4): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         GameObject.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\dynasty engine\game object\GameObject.h(4): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         Inputable.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\dynasty engine\game object\Inputable.h(4): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         Updatable.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\dynasty engine\game object\Updatable.h(4): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         main.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\dynasty engine\Dynasty.h(4): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         AlarmableManager.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\dynasty engine\managers\AlarmableManager.h(5): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         CameraManager.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\dynasty engine\managers\CameraManager.h(4): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         CollisionManager.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\dynasty engine\managers\CollisionManager.h(5): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         DrawableManager.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\dynasty engine\managers\DrawableManager.h(5): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         KeyboardEventManager.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\dynasty engine\managers\SingleKeyEventManager.h(6): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         ModelManager.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\dynasty engine\managers\ModelManager.h(6): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         SceneManager.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\dynasty engine\managers\SceneManager.h(4): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         Compiling...
+         SceneTerrainManager.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\dynasty engine\managers\SceneTerrainManager.h(5): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         ShaderManager.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\dynasty engine\managers\ShaderManager.h(6): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         SingleKeyEventManager.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\dynasty engine\managers\SingleKeyEventManager.h(6): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         TerrainManager.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\dynasty engine\managers\TerrainManager.h(6): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         TextureManager.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\dynasty engine\managers\TextureManager.h(6): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         TimeManager.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\dynasty engine\managers\TimeManager.h(4): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         UpdatableManager.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\dynasty engine\managers\UpdatableManager.h(5): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         FreezeTime.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\dynasty engine\other classes\FreezeTime.h(7): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         MathTools.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\dynasty engine\other classes\MathTools.h(5): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         CommandAlarmDeregistration.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\dynasty engine\scene\..\Managers\AlarmableManager.h(5): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         CommandAlarmRegistration.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\dynasty engine\scene\..\Managers\AlarmableManager.h(5): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         CommandDrawDeregistration.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\dynasty engine\scene\..\Managers\DrawableManager.h(5): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         CommandDrawRegistration.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\dynasty engine\scene\..\Managers\DrawableManager.h(5): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         CommandKeyEventDeregistration.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\dynasty engine\managers\SingleKeyEventManager.h(6): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         CommandKeyEventRegistration.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\dynasty engine\managers\SingleKeyEventManager.h(6): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         CommandSceneAddObject.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\dynasty engine\scene\..\Game Object\GameObject.h(4): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         CommandSceneChange.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\dynasty engine\scene\..\Managers\SceneManager.h(4): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         CommandSceneRemoveObject.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\dynasty engine\scene\..\Game Object\GameObject.h(4): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         CommandUpdateDeregistration.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\dynasty engine\scene\..\Managers\UpdatableManager.h(5): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         CommandUpdateRegistration.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\dynasty engine\scene\..\Managers\UpdatableManager.h(5): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         Compiling...
+         CommandVisualizerRender.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\dynasty engine\scene\..\Game Object\GameObject.h(4): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         Scene.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\dynasty engine\scene\Scene.h(4): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         SceneRegistrationBroker.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\dynasty engine\scene\SceneRegistrationBroker.h(5): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         CellIterator.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\dynasty engine\terrain\TerrainCell.h(4): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         TerrainObject.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\dynasty engine\terrain\..\Game Object\Drawable.h(4): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         GameInitialize.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\test game\..\Dynasty Engine\Dynasty.h(4): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         LoadAllResources.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\test game\..\Dynasty Engine\Dynasty.h(4): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         Box.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\test game\objects\Box.h(4): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         Bullet.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\test game\objects\Bullet.h(4): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         Cottage.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\test game\objects\Cottage.h(4): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         Spaceship.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\test game\objects\Spaceship.h(4): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         BulletFactory.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\test game\other\BulletFactory.h(5): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         GodCamera.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\test game\other\GodCamera.h(4): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         IntroScene.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\test game\scenes\..\..\Dynasty Engine\Scene\Scene.h(4): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+         SceneTest.cpp
+     1>f:\documents\stuff\school stuff\junior\spring quarter\gam377 - game engine 2\berthiaume2016spring_gam377\student\dcheng\sprint 9\dynasty engine\src\test game\scenes\..\..\Dynasty Engine\Scene\Scene.h(4): fatal error C1083: Cannot open include file: 'AzulCore.h': No such file or directory
+     1>Done Building Project "F:\Documents\Stuff\School Stuff\Junior\Spring Quarter\GAM377 - Game Engine 2\berthiaume2016spring_gam377\student\dcheng\Sprint 9\Dynasty Engine\src\GameEngine.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:04.49

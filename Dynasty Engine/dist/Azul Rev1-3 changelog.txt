@@ -1,0 +1,4 @@
+Changelog
+Jan 25 2016
+
+Fixed the Keyboard singleton and correctly recoded key values between AZUL and GLFW

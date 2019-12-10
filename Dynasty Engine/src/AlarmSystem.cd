@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Scene">
+    <Position X="9.5" Y="0.75" Width="3" />
+    <Members>
+      <Method Name="~Scene" Hidden="true" />
+      <Method Name="AddToScene" Hidden="true" />
+      <Field Name="CameraMgr" Hidden="true" />
+      <Field Name="CollisionMgr" Hidden="true" />
+      <Method Name="Delete" Hidden="true" />
+      <Method Name="DeregisterCollision" Hidden="true" />
+      <Method Name="DeregisterDraw" Hidden="true" />
+      <Method Name="DeregisterKeyEvent" Hidden="true" />
+      <Method Name="DeregisterUpdate" Hidden="true" />
+      <Method Name="Draw" Hidden="true" />
+      <Field Name="DrawMgr" Hidden="true" />
+      <Method Name="Initialize" Hidden="true" />
+      <Field Name="KeyEventMgr" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="RegisterCollision" Hidden="true" />
+      <Method Name="RegisterDraw" Hidden="true" />
+      <Method Name="RegisterKeyEvent" Hidden="true" />
+      <Method Name="RegisterUpdate" Hidden="true" />
+      <Method Name="RemoveFromScene" Hidden="true" />
+      <Method Name="Scene" Hidden="true" />
+      <Method Name="SceneEnd" Hidden="true" />
+      <Method Name="SetCollisionPair" Hidden="true" />
+      <Method Name="SetCollisionSelf" Hidden="true" />
+      <Method Name="Update" Hidden="true" />
+      <Field Name="UpdateMgr" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>RAQAAiAACAEBAwAggEIAIAIAQBcAAAAQAgAggEAACAQ=</HashCode>
+      <FileName>Dynasty Engine\Scene\Scene.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="AlarmMgr" />
+      <Field Name="RegistrationBrkr" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AlarmableManager">
+    <Position X="1.25" Y="0.5" Width="2.75" />
+    <Members>
+      <Method Name="~AlarmableManager" Hidden="true" />
+      <Method Name="AlarmableManager" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Typedef Name="AlarmableManager::TimelineMap" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Dynasty Engine\Managers\AlarmableManager.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAABAAAAAAAAAAAAMBAAEAAAAgAAAgAAA=</HashCode>
+      <FileName>Dynasty Engine\Managers\AlarmableManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SceneRegistrationBroker">
+    <Position X="13.75" Y="0.75" Width="4" />
+    <Members>
+      <Method Name="~SceneRegistrationBroker" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAIAAAAAAAAAAAAAQAAAAEAAAAAgAAAAAAg=</HashCode>
+      <FileName>Dynasty Engine\Scene\SceneRegistrationBroker.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommandBase">
+    <Position X="1.75" Y="3" Width="1.5" />
+    <Members>
+      <Method Name="~CommandBase" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Dynasty Engine\Scene\CommandBase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommandAlarmRegistration">
+    <Position X="2.75" Y="4.5" Width="2.25" />
+    <Members>
+      <Method Name="~CommandAlarmRegistration" Hidden="true" />
+      <Method Name="CommandAlarmRegistration" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="CommandBase" FixedToPoint="true">
+      <Path>
+        <Point X="2.5" Y="4.103" />
+        <Point X="2.5" Y="4.308" />
+        <Point X="3.375" Y="4.308" />
+        <Point X="3.375" Y="4.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAABAAAAAAAEAAAAAAQAAAAAAAQgAAAAAAA=</HashCode>
+      <FileName>Dynasty Engine\Scene\CommandAlarmRegistration.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="ptrMgr" />
+      <Field Name="ptrAm" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CommandAlarmDeregistration">
+    <Position X="0.5" Y="4.5" Width="2.25" />
+    <Members>
+      <Method Name="~CommandAlarmDeregistration" Hidden="true" />
+      <Method Name="CommandAlarmDeregistration" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAACQEAAAAAAQAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Dynasty Engine\Scene\CommandAlarmDeregistration.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="ptrMgr" />
+      <Field Name="ptrAm" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AlarmMarker">
+    <Position X="1.5" Y="6.25" Width="2" />
+    <Members>
+      <Method Name="~AlarmMarker" Hidden="true" />
+      <Method Name="AlarmMarker" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAQAAEAAQAAAAAAAAAAAAAAAEAAgAAAABEA=</HashCode>
+      <FileName>Dynasty Engine\Game Object\AlarmMarker.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alarmable">
+    <Position X="5.5" Y="5" Width="3" />
+    <Members>
+      <Method Name="~Alarmable" Hidden="true" />
+      <Method Name="Alarmable" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAVAAABAAAAAAAAAAAAAAAAAAhkAAAAAgA=</HashCode>
+      <FileName>Dynasty Engine\Game Object\Alarmable.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="ptrAm" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GameObject">
+    <Position X="6" Y="1.25" Width="2.25" />
+    <Members>
+      <Method Name="~GameObject" Hidden="true" />
+      <Method Name="GameObject" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="Alarmable" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="7.125" Y="5" />
+        <Point X="7.125" Y="3.962" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>ABAAAAAABAAEAQgAAAAAAAAAAAAAAAAABAigAAIAAAA=</HashCode>
+      <FileName>Dynasty Engine\Game Object\GameObject.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="currentScene" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

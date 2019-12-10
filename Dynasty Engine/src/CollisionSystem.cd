@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Scene">
+    <Position X="6" Y="0.5" Width="2" />
+    <Members>
+      <Method Name="~Scene" Hidden="true" />
+      <Method Name="AddToScene" Hidden="true" />
+      <Field Name="AlarmMgr" Hidden="true" />
+      <Field Name="CameraMgr" Hidden="true" />
+      <Method Name="Delete" Hidden="true" />
+      <Method Name="DeregisterAlarm" Hidden="true" />
+      <Method Name="DeregisterDraw" Hidden="true" />
+      <Method Name="DeregisterKeyEvent" Hidden="true" />
+      <Method Name="DeregisterUpdate" Hidden="true" />
+      <Method Name="Draw" Hidden="true" />
+      <Field Name="DrawMgr" Hidden="true" />
+      <Method Name="Initialize" Hidden="true" />
+      <Field Name="KeyEventMgr" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="RegisterAlarm" Hidden="true" />
+      <Method Name="RegisterDraw" Hidden="true" />
+      <Method Name="RegisterKeyEvent" Hidden="true" />
+      <Method Name="RegisterUpdate" Hidden="true" />
+      <Method Name="RemoveFromScene" Hidden="true" />
+      <Method Name="Scene" Hidden="true" />
+      <Method Name="SceneEnd" Hidden="true" />
+      <Field Name="TerrainMgr" Hidden="true" />
+      <Method Name="Update" Hidden="true" />
+      <Field Name="UpdateMgr" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>xAQAAiAACAEBAwAggEIEICIAQDcIAAAQAgAggEAACAQ=</HashCode>
+      <FileName>Dynasty Engine\Scene\Scene.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="CollisionMgr" />
+      <Field Name="RegistrationBrkr" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CollisionManager">
+    <Position X="0.5" Y="0.5" Width="2.25" />
+    <Members>
+      <Method Name="~CollisionManager" Hidden="true" />
+      <Method Name="CollisionManager" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Typedef Name="CollisionManager::CommandSet" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Dynasty Engine\Managers\CollisionManager.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAQAAABAAAAAAIAAEAAwAAAAAggACAAAQ=</HashCode>
+      <FileName>Dynasty Engine\Managers\CollisionManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SceneRegistrationBroker">
+    <Position X="10.75" Y="0.5" Width="2.75" />
+    <Members>
+      <Method Name="~SceneRegistrationBroker" Hidden="true" />
+      <Method Name="ExecuteCommands" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="SceneRegistrationBroker" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAIAAAAAAAAAAAAAQAAAAEAAAAAgAAAAAAg=</HashCode>
+      <FileName>Dynasty Engine\Scene\SceneRegistrationBroker.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Collidable">
+    <Position X="0.5" Y="3.5" Width="2.25" />
+    <Members>
+      <Method Name="~Collidable" Hidden="true" />
+      <Method Name="Collidable" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AgAAAAIAAIAAIAAAIAACCAAAAAAAAIQAgCggAAAAiAA=</HashCode>
+      <FileName>Dynasty Engine\Game Object\Collidable.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="bSphere" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BoundingSphere">
+    <Position X="1.25" Y="8.75" Width="2" />
+    <Members>
+      <Method Name="~BoundingSphere" Hidden="true" />
+      <Method Name="BoundingSphere" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="CollisionVolume" FixedToPoint="true">
+      <Path>
+        <Point X="4.5" Y="8.094" />
+        <Point X="4.5" Y="8.375" />
+        <Point X="2.812" Y="8.375" />
+        <Point X="2.812" Y="8.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAwAEAAACAAAAAAAAAIECgAAIAAAAAAAAAAgAAgAAAA=</HashCode>
+      <FileName>Dynasty Engine\Collider\BoundingSphere.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CollidableGroup&lt;C&gt;">
+    <Position X="8" Y="8.75" Width="2" />
+    <Members>
+      <Method Name="~CollidableGroup" Hidden="true" />
+      <Method Name="CollidableGroup" Hidden="true" />
+      <Method Name="Instance" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="pUpdateAABB" Hidden="true" />
+      <Field Name="singleInst" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Typedef Name="CollidableGroup&lt;C&gt;::CollidableCollection" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Dynasty Engine\Collider\CollidableGroup.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+    </NestedTypes>
+    <AssociationLine Name="internalAABB" Type="AABB" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="9" Y="11.718" />
+        <Point X="9" Y="13.502" />
+        <Point X="4.5" Y="13.502" />
+        <Point X="4.5" Y="13.127" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAEREAAwAAAAAAAAAAQAIAAAEBAAAASAAgAAAABQA=</HashCode>
+      <FileName>Dynasty Engine\Collider\CollidableGroup.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="internalAABB" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Visualizer">
+    <Position X="10.25" Y="9.25" Width="2.5" />
+    <Members>
+      <Method Name="~Visualizer" Hidden="true" />
+      <Method Name="Instance" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="pRenderAABBOBB" Hidden="true" />
+      <Method Name="pRenderBS" Hidden="true" />
+      <Method Name="pRenderTerrainAABB" Hidden="true" />
+      <Field Name="singleInst" Hidden="true" />
+      <Method Name="Visualizer" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Typedef Name="Visualizer::CommandSet" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Dynasty Engine\Collider\Visualizer.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>BgAAAABAAAAAABEACAAABAAAgAEBAgAAwEAiIEAABBA=</HashCode>
+      <FileName>Dynasty Engine\Collider\Visualizer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommandBase">
+    <Position X="11.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Dynasty Engine\Scene\CommandBase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommandCollisionDelete&lt;C&gt;">
+    <Position X="9" Y="3.75" Width="2.25" />
+    <Members>
+      <Method Name="~CommandCollisionDelete" Hidden="true" />
+      <Method Name="CommandCollisionDelete" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAEAAAgAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Dynasty Engine\Scene\CommandCollisionDelete.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommandCollisionDeregistration&lt;C&gt;">
+    <Position X="8.75" Y="5" Width="2.75" />
+    <Members>
+      <Method Name="~CommandCollisionDeregistration" Hidden="true" />
+      <Method Name="CommandCollisionDeregistration" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAACAAACAEAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Dynasty Engine\Scene\CommandCollisionDeregistration.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommandCollisionRegistration&lt;C&gt;">
+    <Position X="8.75" Y="6.75" Width="2.75" />
+    <Members>
+      <Method Name="~CommandCollisionRegistration" Hidden="true" />
+      <Method Name="CommandCollisionRegistration" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQACABAAAEAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Dynasty Engine\Scene\CommandCollisionRegistration.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommandCollisionTestPair&lt;C1, C2&gt;">
+    <Position X="12.5" Y="3.75" Width="2.75" />
+    <Members>
+      <Method Name="~CommandCollisionTestPair" Hidden="true" />
+      <Method Name="CommandCollisionTestPair" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAABAAAAAAAEAAAABAAAAAAAAAAgIAAAAAA=</HashCode>
+      <FileName>Dynasty Engine\Scene\CommandCollisionTestPair.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommandCollisionTestSelf&lt;C&gt;">
+    <Position X="12.5" Y="5.75" Width="2.5" />
+    <Members>
+      <Method Name="~CommandCollisionTestSelf" Hidden="true" />
+      <Method Name="CommandCollisionTestSelf" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAQAAAAACEAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Dynasty Engine\Scene\CommandCollisionTestSelf.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameObject">
+    <Position X="6.25" Y="3.75" Width="1.75" />
+    <Members>
+      <Method Name="~GameObject" Hidden="true" />
+      <Method Name="GameObject" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>ABAAAAAABAAEAQgAAAAAAAAAAAAAAAAABAigAAIAAAA=</HashCode>
+      <FileName>Dynasty Engine\Game Object\GameObject.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="currentScene" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="OBB">
+    <Position X="5.75" Y="8.75" Width="2" />
+    <Members>
+      <Method Name="~OBB" Hidden="true" />
+      <Method Name="OBB" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="CollisionVolume" FixedToPoint="true">
+      <Path>
+        <Point X="4.5" Y="8.094" />
+        <Point X="4.5" Y="8.375" />
+        <Point X="6.75" Y="8.375" />
+        <Point X="6.75" Y="8.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>ACAEgAAAAAAAAAAEAAIECACAIAAAIIAAAQglACAACAA=</HashCode>
+      <FileName>Dynasty Engine\Collider\OBB.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AABB">
+    <Position X="3.5" Y="8.75" Width="2" />
+    <Members>
+      <Method Name="~AABB" Hidden="true" />
+      <Method Name="AABB" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAEgAAAIAAACAAEAAIECAACIACAIAAAAAAlCEAIIAA=</HashCode>
+      <FileName>Dynasty Engine\Collider\AABB.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CollisionVolume">
+    <Position X="3.25" Y="5" Width="2.5" />
+    <Members>
+      <Method Name="~CollisionVolume" Hidden="true" />
+      <Method Name="CollisionVolume" Hidden="true" />
+      <Method Name="Intersect" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AgACFAIAAAAAAAAACAIECEgAAAAgAAAAAAAgAAAAAAI=</HashCode>
+      <FileName>Dynasty Engine\Collider\CollisionVolume.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommandCollisionTestTerrain&lt;C&gt;">
+    <Position X="12.5" Y="7.5" Width="2.5" />
+    <Members>
+      <Method Name="~CommandCollisionTestTerrain" Hidden="true" />
+      <Method Name="CommandCollisionTestTerrain" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAIEAAAAAAAAAAAAAAAgAAAAgAA=</HashCode>
+      <FileName>Dynasty Engine\Scene\CommandCollisionTestTerrain.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommandVisualizerRender">
+    <Position X="12.75" Y="9.25" Width="2.25" />
+    <Members>
+      <Method Name="~CommandVisualizerRender" Hidden="true" />
+      <Method Name="CommandVisualizerRender" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAEACAAAAAAAACAAQAgAAAAAAA=</HashCode>
+      <FileName>Dynasty Engine\Scene\CommandVisualizerRender.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="VolumeType">
+    <Position X="5.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAACAAAAAAACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Dynasty Engine\Collider\CollisionVolume.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

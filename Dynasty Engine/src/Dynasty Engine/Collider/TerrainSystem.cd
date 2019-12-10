@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TerrainCell">
+    <Position X="9.25" Y="4.75" Width="1.75" />
+    <Members>
+      <Method Name="~TerrainCell" Hidden="true" />
+      <Method Name="TerrainCell" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AgACBAIACAgIAAAMAAwAAAgAAABgAAAEoAAAAgCAAAA=</HashCode>
+      <FileName>Dynasty Engine\Terrain\TerrainCell.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TerrainObject">
+    <Position X="6.75" Y="4" Width="1.75" />
+    <Members>
+      <Method Name="~TerrainObject" Hidden="true" />
+      <Method Name="pComputeGroupAABB" Hidden="true" />
+      <Field Name="pGObjFT" Hidden="true" />
+      <Field Name="pGObjFT2" Hidden="true" />
+      <Method Name="TerrainObject" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAiEAQCAAggAAgQACAAAYGACUACAAAAAIAgACAFAySA=</HashCode>
+      <FileName>Dynasty Engine\Terrain\TerrainObject.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="cellIt" />
+      <Field Name="cellsData" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CellIterator">
+    <Position X="3.25" Y="5.25" Width="2.5" />
+    <Members>
+      <Method Name="~CellIterator" Hidden="true" />
+      <Method Name="CellIterator" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAABEACAAQCAgCAQAAAAQAQAAAgAAAAgEAgAACAAQA=</HashCode>
+      <FileName>Dynasty Engine\Terrain\CellIterator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SceneTerrainManager">
+    <Position X="4" Y="1.25" Width="1.75" />
+    <Members>
+      <Method Name="~SceneTerrainManager" Hidden="true" />
+      <Method Name="Delete" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="SceneTerrainManager" Hidden="true" />
+    </Members>
+    <AssociationLine Name="currentTerrain" Type="TerrainObject">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.495" Y="0.956" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AQAAAAABAAAAAAAAABAAAAAAAAEAAAAAAAAgAgAAEAA=</HashCode>
+      <FileName>Dynasty Engine\Managers\SceneTerrainManager.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="currentTerrain" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TerrainManager">
+    <Position X="6" Y="1.25" Width="1.5" />
+    <Members>
+      <Method Name="~TerrainManager" Hidden="true" />
+      <Method Name="Delete" Hidden="true" />
+      <Method Name="Instance" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="pGetTerrain" Hidden="true" />
+      <Method Name="pLoadTerrain" Hidden="true" />
+      <Method Name="TerrainManager" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Typedef Name="TerrainManager::MapKey" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Dynasty Engine\Managers\TerrainManager.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="TerrainManager::StorageMap" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Dynasty Engine\Managers\TerrainManager.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAQAAAAAAEAAAUAAAAAQAAiQAAQBIA=</HashCode>
+      <FileName>Dynasty Engine\Managers\TerrainManager.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="singleInst" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Scene">
+    <Position X="0.5" Y="1" Width="2" />
+    <Members>
+      <Method Name="~Scene" Hidden="true" />
+      <Method Name="AddToScene" Hidden="true" />
+      <Field Name="AlarmMgr" Hidden="true" />
+      <Field Name="CameraMgr" Hidden="true" />
+      <Field Name="CollisionMgr" Hidden="true" />
+      <Method Name="Delete" Hidden="true" />
+      <Method Name="DeregisterAlarm" Hidden="true" />
+      <Method Name="DeregisterCollision" Hidden="true" />
+      <Method Name="DeregisterDraw" Hidden="true" />
+      <Method Name="DeregisterKeyEvent" Hidden="true" />
+      <Method Name="DeregisterUpdate" Hidden="true" />
+      <Method Name="Draw" Hidden="true" />
+      <Field Name="DrawMgr" Hidden="true" />
+      <Method Name="GetCameraManager" Hidden="true" />
+      <Method Name="Initialize" Hidden="true" />
+      <Field Name="KeyEventMgr" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="RegisterAlarm" Hidden="true" />
+      <Method Name="RegisterCollision" Hidden="true" />
+      <Method Name="RegisterDraw" Hidden="true" />
+      <Method Name="RegisterKeyEvent" Hidden="true" />
+      <Method Name="RegisterUpdate" Hidden="true" />
+      <Method Name="RemoveFromScene" Hidden="true" />
+      <Method Name="Scene" Hidden="true" />
+      <Method Name="SceneEnd" Hidden="true" />
+      <Method Name="SetCollisionPair" Hidden="true" />
+      <Method Name="SetCollisionSelf" Hidden="true" />
+      <Method Name="Update" Hidden="true" />
+      <Field Name="UpdateMgr" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>xAQAAiAACAEBAwAggEIEICIAQDcIAAAQAgAggEAACAQ=</HashCode>
+      <FileName>Dynasty Engine\Scene\Scene.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="TerrainMgr" />
+      <Field Name="RegistrationBrkr" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SceneRegistrationBroker">
+    <Position X="0.5" Y="3" Width="2" />
+    <Members>
+      <Method Name="~SceneRegistrationBroker" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="SceneRegistrationBroker" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAIAAAAAAAAAAAAAQAAAAEAAAAAgAAAAAAg=</HashCode>
+      <FileName>Dynasty Engine\Scene\SceneRegistrationBroker.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommandCollisionTestTerrain&lt;C&gt;">
+    <Position X="0.5" Y="6.5" Width="2.5" />
+    <Members>
+      <Method Name="~CommandCollisionTestTerrain" Hidden="true" />
+      <Method Name="CommandCollisionTestTerrain" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAIEAAAAAAAAAAAAAAAgAAAAgAA=</HashCode>
+      <FileName>Dynasty Engine\Scene\CommandCollisionTestTerrain.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommandBase">
+    <Position X="1" Y="5" Width="1.5" />
+    <Members>
+      <Method Name="~CommandBase" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Dynasty Engine\Scene\CommandBase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

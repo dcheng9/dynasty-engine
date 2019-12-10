@@ -1,0 +1,665 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Dynasty">
+    <Position X="0.5" Y="0.5" Width="2" />
+    <Members>
+      <Method Name="~Dynasty" Hidden="true" />
+      <Method Name="Dynasty" Hidden="true" />
+      <Method Name="Instance" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Field Name="singleInst" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AQQAEAAAAAAAAwAQAIAAAAhAAAAEAAAAYAAgAFAABAY=</HashCode>
+      <FileName>Dynasty Engine\Dynasty.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ModelManager">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="~ModelManager" Hidden="true" />
+      <Field Name="dPath" Hidden="true" />
+      <Method Name="Instance" Hidden="true" />
+      <Method Name="ModelManager" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Field Name="singleInst" Hidden="true" />
+      <Field Name="storage" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Typedef Name="ModelManager::MapKey" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Dynasty Engine\Managers\ModelManager.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="ModelManager::StorageMap" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Dynasty Engine\Managers\ModelManager.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAACAAQAAARAIAAAAAAUQAAAAQAAiAAAABAA=</HashCode>
+      <FileName>Dynasty Engine\Managers\ModelManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShaderManager">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="~ShaderManager" Hidden="true" />
+      <Field Name="dPath" Hidden="true" />
+      <Method Name="Instance" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="ShaderManager" Hidden="true" />
+      <Field Name="singleInst" Hidden="true" />
+      <Field Name="storage" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Typedef Name="ShaderManager::MapKey" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Dynasty Engine\Managers\ShaderManager.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="ShaderManager::StorageMap" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Dynasty Engine\Managers\ShaderManager.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAACAAQAAAAAAAAAAgUAAAAAQABiCABABAA=</HashCode>
+      <FileName>Dynasty Engine\Managers\ShaderManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TextureManager">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="~TextureManager" Hidden="true" />
+      <Field Name="dPath" Hidden="true" />
+      <Method Name="Instance" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Field Name="singleInst" Hidden="true" />
+      <Field Name="storage" Hidden="true" />
+      <Method Name="TextureManager" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Typedef Name="TextureManager::MapKey" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Dynasty Engine\Managers\TextureManager.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="TextureManager::StorageMap" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Dynasty Engine\Managers\TextureManager.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>gAAEAABCAAAAAAAAhAAAAAAABAUAAAAAQAAiAAAABAA=</HashCode>
+      <FileName>Dynasty Engine\Managers\TextureManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraManager">
+    <Position X="29.5" Y="4.5" Width="1.5" />
+    <Members>
+      <Method Name="~CameraManager" Hidden="true" />
+      <Method Name="CameraManager" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAgAAAAgAAAAAAgAAAAAAAAAAAMAAAAAAAAgAAAgAAA=</HashCode>
+      <FileName>Dynasty Engine\Managers\CameraManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SceneManager">
+    <Position X="15.5" Y="1.25" Width="1.5" />
+    <Members>
+      <Method Name="~SceneManager" Hidden="true" />
+      <Method Name="Instance" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="SceneManager" Hidden="true" />
+      <Field Name="singleInst" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AgQAAAAACAAAAkgABAAAAAAAAEMAAAAAQACgAAAADAQ=</HashCode>
+      <FileName>Dynasty Engine\Managers\SceneManager.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="currentScene" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AlarmableManager">
+    <Position X="21.75" Y="4.5" Width="1.5" />
+    <Members>
+      <Method Name="~AlarmableManager" Hidden="true" />
+      <Method Name="AlarmableManager" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Typedef Name="AlarmableManager::TimelineMap" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Dynasty Engine\Managers\AlarmableManager.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAABAAAAAAAAAAAAMBAAEAAAAgAAAgAAA=</HashCode>
+      <FileName>Dynasty Engine\Managers\AlarmableManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DrawableManager">
+    <Position X="20" Y="4.5" Width="1.5" />
+    <Members>
+      <Method Name="~DrawableManager" Hidden="true" />
+      <Method Name="DrawableManager" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Typedef Name="DrawableManager::StorageSet" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Dynasty Engine\Managers\DrawableManager.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAABAAAAAAAABAAAEBAAAAAAAyAAAAAAA=</HashCode>
+      <FileName>Dynasty Engine\Managers\DrawableManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UpdatableManager">
+    <Position X="18.25" Y="4.5" Width="1.5" />
+    <Members>
+      <Method Name="~UpdatableManager" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="UpdatableManager" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Typedef Name="UpdatableManager::StorageSet" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Dynasty Engine\Managers\UpdatableManager.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAABAAAAAAEAAAAgEBAAAAAAAiAAAAAAA=</HashCode>
+      <FileName>Dynasty Engine\Managers\UpdatableManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alarmable">
+    <Position X="21.75" Y="7.5" Width="1.5" />
+    <Members>
+      <Method Name="~Alarmable" Hidden="true" />
+      <Method Name="Alarmable" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAVAAABAAAAAAAAAAAAAAAAAAhkAAAAAgA=</HashCode>
+      <FileName>Dynasty Engine\Game Object\Alarmable.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="ptrAm" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AlarmMarker">
+    <Position X="24.25" Y="7.5" Width="1.5" />
+    <Members>
+      <Method Name="~AlarmMarker" Hidden="true" />
+      <Method Name="AlarmMarker" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAQAAEAAQAAAAAAAAAAAAAAAEAAgAAAABAA=</HashCode>
+      <FileName>Dynasty Engine\Game Object\AlarmMarker.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="ptrAl" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Updatable">
+    <Position X="18.25" Y="7.5" Width="1.5" />
+    <Members>
+      <Method Name="~Updatable" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="Updatable" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAEABgkAAAABAA=</HashCode>
+      <FileName>Dynasty Engine\Game Object\Updatable.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Scene">
+    <Position X="15.5" Y="4.75" Width="1.5" />
+    <Members>
+      <Method Name="~Scene" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="Scene" Hidden="true" />
+    </Members>
+    <AssociationLine Name="UpdateMgr" Type="UpdatableManager">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.204" Y="0.122" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="DrawMgr" Type="DrawableManager">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.359" Y="0.372" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="AlarmMgr" Type="AlarmableManager">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.348" Y="0.393" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="KeyEventMgr" Type="KeyboardEventManager">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.544" Y="0.433" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="CollisionMgr" Type="CollisionManager">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.502" Y="0.495" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="CameraMgr" Type="CameraManager">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.265" Y="0.455" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>RAQAAiAACAEBAwAggEIAIAIAQBcAAAAQAgAggEAACAQ=</HashCode>
+      <FileName>Dynasty Engine\Scene\Scene.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="UpdateMgr" />
+      <Field Name="DrawMgr" />
+      <Field Name="AlarmMgr" />
+      <Field Name="KeyEventMgr" />
+      <Field Name="CollisionMgr" />
+      <Field Name="RegistrationBrkr" />
+      <Field Name="CameraMgr" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SceneRegistrationBroker">
+    <Position X="12.5" Y="4.5" Width="1.5" />
+    <Members>
+      <Method Name="~SceneRegistrationBroker" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="SceneRegistrationBroker" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAIAAAAAAAAAAAAAQAAAAEAAAAAgAAAAAAg=</HashCode>
+      <FileName>Dynasty Engine\Scene\SceneRegistrationBroker.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Drawable">
+    <Position X="20" Y="7.5" Width="1.5" />
+    <Members>
+      <Method Name="~Drawable" Hidden="true" />
+      <Method Name="Drawable" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAABAAAAAAAAAAAgAgkAAAgAAA=</HashCode>
+      <FileName>Dynasty Engine\Game Object\Drawable.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommandBase">
+    <Position X="5.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Dynasty Engine\Scene\CommandBase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommandAlarmDeregistration">
+    <Position X="2" Y="6.5" Width="1.5" />
+    <Members>
+      <Method Name="~CommandAlarmDeregistration" Hidden="true" />
+      <Method Name="CommandAlarmDeregistration" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAACQEAAAAAAQAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Dynasty Engine\Scene\CommandAlarmDeregistration.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommandAlarmRegistration">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <Members>
+      <Method Name="~CommandAlarmRegistration" Hidden="true" />
+      <Method Name="CommandAlarmRegistration" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAABAAAAAAAEAAAAAAQAAAAAAAQgAAAAAAA=</HashCode>
+      <FileName>Dynasty Engine\Scene\CommandAlarmRegistration.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommandDrawDeregistration">
+    <Position X="3.5" Y="6.5" Width="1.5" />
+    <Members>
+      <Method Name="~CommandDrawDeregistration" Hidden="true" />
+      <Method Name="CommandDrawDeregistration" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAEAAAAAAQAAAAAQAAgAAAAAAA=</HashCode>
+      <FileName>Dynasty Engine\Scene\CommandDrawDeregistration.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommandDrawRegistration">
+    <Position X="5" Y="6.5" Width="1.5" />
+    <Members>
+      <Method Name="~CommandDrawRegistration" Hidden="true" />
+      <Method Name="CommandDrawRegistration" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAEAAAAIAQAAQAAAAAgAAAAAAA=</HashCode>
+      <FileName>Dynasty Engine\Scene\CommandDrawRegistration.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommandUpdateDeregistration">
+    <Position X="8" Y="6.5" Width="1.5" />
+    <Members>
+      <Method Name="~CommandUpdateDeregistration" Hidden="true" />
+      <Method Name="CommandUpdateDeregistration" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAABAAAAAAEAAAAAAQAAAAAAAAgAAAAAAg=</HashCode>
+      <FileName>Dynasty Engine\Scene\CommandUpdateDeregistration.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommandUpdateRegistration">
+    <Position X="6.5" Y="6.5" Width="1.5" />
+    <Members>
+      <Method Name="~CommandUpdateRegistration" Hidden="true" />
+      <Method Name="CommandUpdateRegistration" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAEAAAAAEQAAAAAAAAgAAAAAAg=</HashCode>
+      <FileName>Dynasty Engine\Scene\CommandUpdateRegistration.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameObject">
+    <Position X="21.75" Y="10.75" Width="1.5" />
+    <Members>
+      <Method Name="~GameObject" Hidden="true" />
+      <Method Name="GameObject" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>ABAAAAAABAAEAQgAAAAAAAAAAAAAAAAABAigAAIAAAA=</HashCode>
+      <FileName>Dynasty Engine\Game Object\GameObject.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="currentScene" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CommandKeyEventDeregistration">
+    <Position X="9.5" Y="6.5" Width="1.5" />
+    <Members>
+      <Method Name="~CommandKeyEventDeregistration" Hidden="true" />
+      <Method Name="CommandKeyEventDeregistration" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAABEAAAAAAQAABAAAAAgAAAAAgA=</HashCode>
+      <FileName>Dynasty Engine\Scene\CommandKeyEventDeregistration.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommandKeyEventRegistration">
+    <Position X="11" Y="6.5" Width="1.5" />
+    <Members>
+      <Method Name="~CommandKeyEventRegistration" Hidden="true" />
+      <Method Name="CommandKeyEventRegistration" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAEAAAAAAQAABAAAAAkAAAAAgA=</HashCode>
+      <FileName>Dynasty Engine\Scene\CommandKeyEventRegistration.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KeyboardEventManager">
+    <Position X="26" Y="4.5" Width="1.5" />
+    <Members>
+      <Method Name="~KeyboardEventManager" Hidden="true" />
+      <Method Name="KeyboardEventManager" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Typedef Name="KeyboardEventManager::KeyMgrMap" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Dynasty Engine\Managers\KeyboardEventManager.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAACAABAAAAAAAAQAAAEBAACAAAAgAAAAAAA=</HashCode>
+      <FileName>Dynasty Engine\Managers\KeyboardEventManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inputable">
+    <Position X="26" Y="7.5" Width="1.5" />
+    <Members>
+      <Method Name="~Inputable" Hidden="true" />
+      <Method Name="Inputable" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAggAFBgEAA=</HashCode>
+      <FileName>Dynasty Engine\Game Object\Inputable.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SingleKeyEventManager">
+    <Position X="27.75" Y="4.5" Width="1.5" />
+    <Members>
+      <Method Name="~SingleKeyEventManager" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="SingleKeyEventManager" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAGIAAAAAAABAAICAAAAAAAAAJCAAAAAAgAAAgAAA=</HashCode>
+      <FileName>Dynasty Engine\Managers\SingleKeyEventManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimeManager">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="~TimeManager" Hidden="true" />
+      <Method Name="Instance" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Field Name="singleInst" Hidden="true" />
+      <Method Name="TimeManager" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AQCAgAABAAAAAAAAAAAgAgQAAAEAAACBQAAgAAAAJAA=</HashCode>
+      <FileName>Dynasty Engine\Managers\TimeManager.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="FrzTime" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FreezeTime">
+    <Position X="10.5" Y="3.75" Width="1.5" />
+    <Members>
+      <Method Name="~FreezeTime" Hidden="true" />
+      <Field Name="FREEZE_KEY" Hidden="true" />
+      <Method Name="FreezeTime" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Field Name="SINGLE_FRAME_KEY" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AgAAQAAgAAAAAgAAAgAAAAAAAAAAAgAAIQAgAAAAAAA=</HashCode>
+      <FileName>Dynasty Engine\Other Classes\FreezeTime.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommandSceneAddObject">
+    <Position X="0.5" Y="8.75" Width="1.5" />
+    <Members>
+      <Method Name="~CommandSceneAddObject" Hidden="true" />
+      <Method Name="CommandSceneAddObject" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AQAAAAABgAAAAAAAAAAEAAAAAAAAAAAAAQAgAAAAAAA=</HashCode>
+      <FileName>Dynasty Engine\Scene\CommandSceneAddObject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommandSceneRemoveObject">
+    <Position X="2" Y="8.75" Width="1.5" />
+    <Members>
+      <Method Name="~CommandSceneRemoveObject" Hidden="true" />
+      <Method Name="CommandSceneRemoveObject" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAIAAAAAAAAEAAAAAAAAgAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Dynasty Engine\Scene\CommandSceneRemoveObject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommandCollisionDelete&lt;C&gt;">
+    <Position X="3.5" Y="8.75" Width="1.5" />
+    <Members>
+      <Method Name="~CommandCollisionDelete" Hidden="true" />
+      <Method Name="CommandCollisionDelete" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAEAAAgAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Dynasty Engine\Scene\CommandCollisionDelete.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommandCollisionDeregistration&lt;C&gt;">
+    <Position X="5" Y="8.75" Width="1.5" />
+    <Members>
+      <Method Name="~CommandCollisionDeregistration" Hidden="true" />
+      <Method Name="CommandCollisionDeregistration" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAACAAACAEAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Dynasty Engine\Scene\CommandCollisionDeregistration.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommandCollisionRegistration&lt;C&gt;">
+    <Position X="6.5" Y="8.75" Width="1.5" />
+    <Members>
+      <Method Name="~CommandCollisionRegistration" Hidden="true" />
+      <Method Name="CommandCollisionRegistration" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQACABAAAEAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Dynasty Engine\Scene\CommandCollisionRegistration.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommandCollisionTestPair&lt;C1, C2&gt;">
+    <Position X="9.5" Y="8.75" Width="1.5" />
+    <Members>
+      <Method Name="~CommandCollisionTestPair" Hidden="true" />
+      <Method Name="CommandCollisionTestPair" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAABAAAAAAAEAAAABAAAAAAAAAAgIAAAAAA=</HashCode>
+      <FileName>Dynasty Engine\Scene\CommandCollisionTestPair.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommandCollisionTestSelf&lt;C&gt;">
+    <Position X="8" Y="8.75" Width="1.5" />
+    <Members>
+      <Method Name="~CommandCollisionTestSelf" Hidden="true" />
+      <Method Name="CommandCollisionTestSelf" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAQAAAAACEAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Dynasty Engine\Scene\CommandCollisionTestSelf.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CollisionManager">
+    <Position X="31.25" Y="4.5" Width="1.5" />
+    <Members>
+      <Method Name="~CollisionManager" Hidden="true" />
+      <Method Name="CollisionManager" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Typedef Name="CollisionManager::CommandSet" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Dynasty Engine\Managers\CollisionManager.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAABAAAAAAIAAEAAwAAAAAggACAAAQ=</HashCode>
+      <FileName>Dynasty Engine\Managers\CollisionManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CollidableGroup&lt;C&gt;">
+    <Position X="31.25" Y="7.5" Width="1.5" />
+    <Members>
+      <Method Name="~CollidableGroup" Hidden="true" />
+      <Method Name="CollidableGroup" Hidden="true" />
+      <Method Name="Instance" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Field Name="singleInst" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Typedef Name="CollidableGroup&lt;C&gt;::CollidableCollection" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Dynasty Engine\Collider\CollidableGroup.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAEAEAAgAAAAAAAAAAQAIAAAEBAAAASAAgAAAABQA=</HashCode>
+      <FileName>Dynasty Engine\Collider\CollidableGroup.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Collidable">
+    <Position X="27.75" Y="7.5" Width="1.5" />
+    <Members>
+      <Method Name="~Collidable" Hidden="true" />
+      <Method Name="Collidable" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AgAAAAIAAIAAAAAAAAACCAAAAAAAAAQAgCggAAAAgAA=</HashCode>
+      <FileName>Dynasty Engine\Game Object\Collidable.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="bSphere" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Visualizer">
+    <Position X="29.5" Y="10" Width="1.5" />
+    <Members>
+      <Method Name="~Visualizer" Hidden="true" />
+      <Method Name="Instance" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Field Name="singleInst" Hidden="true" />
+      <Method Name="Visualizer" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAIEAAAAAAAAAAAEAAAAAwEAgAAAABAg=</HashCode>
+      <FileName>Dynasty Engine\Collider\Visualizer.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="singleInst" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BoundingSphere">
+    <Position X="29.5" Y="7.5" Width="1.5" />
+    <Members>
+      <Method Name="~BoundingSphere" Hidden="true" />
+      <Method Name="BoundingSphere" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAwAAAAACAAAAAAAAAIEAgAAIAAAAAAAAAAgAAgAAAA=</HashCode>
+      <FileName>Dynasty Engine\Collider\BoundingSphere.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

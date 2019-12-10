@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3167A812-5D2C-4EE9-ACFD-F0E959384755}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>spinnycube</RootNamespace>
+    <ProjectName>DynastyEngine</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)include;$(SolutionDir)extern\glfw-2.7.6\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)lib;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)_Debug</TargetName>
+    <OutDir>$(ProjectDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <GenerateManifest>false</GenerateManifest>
+    <EnableManagedIncrementalBuild>true</EnableManagedIncrementalBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)include;$(SolutionDir)extern\glfw-2.7.6\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)lib;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)bin\</OutDir>
+    <IntDir>$(ProjectName)_$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)dist\Math\include;$(SolutionDir)dist\SB6\include;$(SolutionDir)dist\GLFW\include;$(SolutionDir)dist\File\include;$(SolutionDir)dist\AzulCore\include</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <StringPooling>false</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <SDLCheck>
+      </SDLCheck>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableParallelCodeGeneration>false</EnableParallelCodeGeneration>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <OpenMPSupport>false</OpenMPSupport>
+      <UseUnicodeForAssemblerListing>false</UseUnicodeForAssemblerListing>
+      <DisableSpecificWarnings>4316</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>MSVCRTD.lib</IgnoreSpecificDefaultLibraries>
+      <ShowProgress>NotSet</ShowProgress>
+      <LinkStatus>
+      </LinkStatus>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Dynasty Engine\Collider\AABB.cpp" />
+    <ClCompile Include="Dynasty Engine\Collider\BoundingSphere.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Dynasty Engine\Collider\OBB.cpp" />
+    <ClCompile Include="Dynasty Engine\Collider\Visualizer.cpp" />
+    <ClCompile Include="Dynasty Engine\Dynasty.cpp" />
+    <ClCompile Include="Dynasty Engine\Game Object\Alarmable.cpp" />
+    <ClCompile Include="Dynasty Engine\Game Object\AlarmMarker.cpp" />
+    <ClCompile Include="Dynasty Engine\Game Object\Collidable.cpp" />
+    <ClCompile Include="Dynasty Engine\Game Object\Drawable.cpp" />
+    <ClCompile Include="Dynasty Engine\Game Object\GameObject.cpp" />
+    <ClCompile Include="Dynasty Engine\Game Object\Inputable.cpp" />
+    <ClCompile Include="Dynasty Engine\Game Object\Updatable.cpp" />
+    <ClCompile Include="Dynasty Engine\main.cpp" />
+    <ClCompile Include="Dynasty Engine\Managers\AlarmableManager.cpp" />
+    <ClCompile Include="Dynasty Engine\Managers\CameraManager.cpp" />
+    <ClCompile Include="Dynasty Engine\Managers\CollisionManager.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Dynasty Engine\Managers\DrawableManager.cpp" />
+    <ClCompile Include="Dynasty Engine\Managers\KeyboardEventManager.cpp" />
+    <ClCompile Include="Dynasty Engine\Managers\ModelManager.cpp" />
+    <ClCompile Include="Dynasty Engine\Managers\SceneManager.cpp" />
+    <ClCompile Include="Dynasty Engine\Managers\SceneTerrainManager.cpp" />
+    <ClCompile Include="Dynasty Engine\Managers\ShaderManager.cpp" />
+    <ClCompile Include="Dynasty Engine\Managers\SingleKeyEventManager.cpp" />
+    <ClCompile Include="Dynasty Engine\Managers\TerrainManager.cpp" />
+    <ClCompile Include="Dynasty Engine\Managers\TextureManager.cpp" />
+    <ClCompile Include="Dynasty Engine\Managers\TimeManager.cpp" />
+    <ClCompile Include="Dynasty Engine\Managers\UpdatableManager.cpp" />
+    <ClCompile Include="Dynasty Engine\Other Classes\FreezeTime.cpp" />
+    <ClCompile Include="Dynasty Engine\Other Classes\MathTools.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Dynasty Engine\Scene\CommandAlarmDeregistration.cpp" />
+    <ClCompile Include="Dynasty Engine\Scene\CommandAlarmRegistration.cpp" />
+    <ClCompile Include="Dynasty Engine\Scene\CommandDrawDeregistration.cpp" />
+    <ClCompile Include="Dynasty Engine\Scene\CommandDrawRegistration.cpp" />
+    <ClCompile Include="Dynasty Engine\Scene\CommandKeyEventDeregistration.cpp" />
+    <ClCompile Include="Dynasty Engine\Scene\CommandKeyEventRegistration.cpp" />
+    <ClCompile Include="Dynasty Engine\Scene\CommandSceneAddObject.cpp" />
+    <ClCompile Include="Dynasty Engine\Scene\CommandSceneChange.cpp" />
+    <ClCompile Include="Dynasty Engine\Scene\CommandSceneRemoveObject.cpp" />
+    <ClCompile Include="Dynasty Engine\Scene\CommandUpdateDeregistration.cpp" />
+    <ClCompile Include="Dynasty Engine\Scene\CommandUpdateRegistration.cpp" />
+    <ClCompile Include="Dynasty Engine\Scene\CommandVisualizerRender.cpp" />
+    <ClCompile Include="Dynasty Engine\Scene\Scene.cpp" />
+    <ClCompile Include="Dynasty Engine\Scene\SceneRegistrationBroker.cpp" />
+    <ClCompile Include="Dynasty Engine\Terrain\CellIterator.cpp" />
+    <ClCompile Include="Dynasty Engine\Terrain\TerrainObject.cpp" />
+    <ClCompile Include="Test Game\GameInitialize.cpp" />
+    <ClCompile Include="Test Game\LoadAllResources.cpp" />
+    <ClCompile Include="Test Game\Objects\Box.cpp" />
+    <ClCompile Include="Test Game\Objects\Bullet.cpp" />
+    <ClCompile Include="Test Game\Objects\Cottage.cpp" />
+    <ClCompile Include="Test Game\Objects\Spaceship.cpp" />
+    <ClCompile Include="Test Game\Other\BulletFactory.cpp" />
+    <ClCompile Include="Test Game\Other\GodCamera.cpp" />
+    <ClCompile Include="Test Game\Scenes\IntroScene.cpp" />
+    <ClCompile Include="Test Game\Scenes\SceneTest.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\dist\AzulCore\include\AzulCore.h" />
+    <ClInclude Include="..\dist\AzulCore\include\AzulFileHdr.h" />
+    <ClInclude Include="..\dist\AzulCore\include\AzulHelper.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Camera.h" />
+    <ClInclude Include="..\dist\AzulCore\include\DebugOut.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Engine.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GpuVertTypes.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_ColorByPosition.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_ColorNoTexture.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_ColorNoTextureLight.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_Sprite.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_SpriteBox.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_TextureFlat.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_TextureLight.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_WireframeAutoColor.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_WireframeConstantColor.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Image.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Keyboard.h" />
+    <ClInclude Include="..\dist\AzulCore\include\LibrarySetup.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Model.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Mouse.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Rect.h" />
+    <ClInclude Include="..\dist\AzulCore\include\ShaderObject.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Texture.h" />
+    <ClInclude Include="..\dist\AzulCore\include\TextureTGA.h" />
+    <ClInclude Include="..\dist\File\include\File.h" />
+    <ClInclude Include="..\dist\GLFW\include\GL\glfw.h" />
+    <ClInclude Include="..\dist\Math\include\Align16.h" />
+    <ClInclude Include="..\dist\Math\include\Constants.h" />
+    <ClInclude Include="..\dist\Math\include\Enum.h" />
+    <ClInclude Include="..\dist\Math\include\MathApp.h" />
+    <ClInclude Include="..\dist\Math\include\MathEngine.h" />
+    <ClInclude Include="..\dist\Math\include\Matrix.h" />
+    <ClInclude Include="..\dist\Math\include\Quat.h" />
+    <ClInclude Include="..\dist\Math\include\QuatApp.h" />
+    <ClInclude Include="..\dist\Math\include\Util.h" />
+    <ClInclude Include="..\dist\Math\include\Vect.h" />
+    <ClInclude Include="..\dist\Math\include\VectApp.h" />
+    <ClInclude Include="..\dist\SB6\include\arcball.h" />
+    <ClInclude Include="..\dist\SB6\include\GL\gl3w.h" />
+    <ClInclude Include="..\dist\SB6\include\GL\glcorearb.h" />
+    <ClInclude Include="..\dist\SB6\include\GL\glext.h" />
+    <ClInclude Include="..\dist\SB6\include\GL\glxext.h" />
+    <ClInclude Include="..\dist\SB6\include\GL\wglext.h" />
+    <ClInclude Include="..\dist\SB6\include\object.h" />
+    <ClInclude Include="..\dist\SB6\include\sb6.h" />
+    <ClInclude Include="..\dist\SB6\include\sb6ext.h" />
+    <ClInclude Include="..\dist\SB6\include\sb6ktx.h" />
+    <ClInclude Include="..\dist\SB6\include\sb6mfile.h" />
+    <ClInclude Include="..\dist\SB6\include\shader.h" />
+    <ClInclude Include="..\dist\SB6\include\vmath.h" />
+    <ClInclude Include="Dynasty Engine\Collider\AABB.h" />
+    <ClInclude Include="Dynasty Engine\Collider\BoundingSphere.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Collider\CollidableGroup.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Collider\CollisionVolume.h" />
+    <ClInclude Include="Dynasty Engine\Collider\OBB.h" />
+    <ClInclude Include="Dynasty Engine\Collider\Visualizer.h" />
+    <ClInclude Include="Dynasty Engine\Dynasty.h" />
+    <ClInclude Include="Dynasty Engine\Game Object\Alarmable.h" />
+    <ClInclude Include="Dynasty Engine\Game Object\AlarmMarker.h" />
+    <ClInclude Include="Dynasty Engine\Game Object\Collidable.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Game Object\Drawable.h" />
+    <ClInclude Include="Dynasty Engine\Game Object\GameObject.h" />
+    <ClInclude Include="Dynasty Engine\Game Object\Inputable.h" />
+    <ClInclude Include="Dynasty Engine\Game Object\Updatable.h" />
+    <ClInclude Include="Dynasty Engine\Managers\AlarmableManager.h" />
+    <ClInclude Include="Dynasty Engine\Managers\CameraManager.h" />
+    <ClInclude Include="Dynasty Engine\Managers\CollisionManager.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Managers\DrawableManager.h" />
+    <ClInclude Include="Dynasty Engine\Managers\KeyboardEventManager.h" />
+    <ClInclude Include="Dynasty Engine\Managers\ModelManager.h" />
+    <ClInclude Include="Dynasty Engine\Managers\SceneManager.h" />
+    <ClInclude Include="Dynasty Engine\Managers\ShaderManager.h" />
+    <ClInclude Include="Dynasty Engine\Managers\SingleKeyEventManager.h" />
+    <ClInclude Include="Dynasty Engine\Managers\TerrainManager.h" />
+    <ClInclude Include="Dynasty Engine\Managers\SceneTerrainManager.h" />
+    <ClInclude Include="Dynasty Engine\Managers\TextureManager.h" />
+    <ClInclude Include="Dynasty Engine\Managers\TimeManager.h" />
+    <ClInclude Include="Dynasty Engine\Managers\UpdatableManager.h" />
+    <ClInclude Include="Dynasty Engine\Other Classes\FreezeTime.h" />
+    <ClInclude Include="Dynasty Engine\Other Classes\MathTools.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Scene\CommandAlarmDeregistration.h" />
+    <ClInclude Include="Dynasty Engine\Scene\CommandAlarmRegistration.h" />
+    <ClInclude Include="Dynasty Engine\Scene\CommandBase.h" />
+    <ClInclude Include="Dynasty Engine\Scene\CommandCollisionDelete.h" />
+    <ClInclude Include="Dynasty Engine\Scene\CommandCollisionDeregistration.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Scene\CommandCollisionRegistration.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Dynasty Engine\Scene\CommandCollisionTestPair.h" />
+    <ClInclude Include="Dynasty Engine\Scene\CommandCollisionTestSelf.h" />
+    <ClInclude Include="Dynasty Engine\Scene\CommandCollisionTestTerrain.h" />
+    <ClInclude Include="Dynasty Engine\Scene\CommandDrawDeregistration.h" />
+    <ClInclude Include="Dynasty Engine\Scene\CommandDrawRegistration.h" />
+    <ClInclude Include="Dynasty Engine\Scene\CommandKeyEventDeregistration.h" />
+    <ClInclude Include="Dynasty Engine\Scene\CommandKeyEventRegistration.h" />
+    <ClInclude Include="Dynasty Engine\Scene\CommandSceneAddObject.h" />
+    <ClInclude Include="Dynasty Engine\Scene\CommandSceneChange.h" />
+    <ClInclude Include="Dynasty Engine\Scene\CommandSceneRemoveObject.h" />
+    <ClInclude Include="Dynasty Engine\Scene\CommandUpdateDeregistration.h" />
+    <ClInclude Include="Dynasty Engine\Scene\CommandUpdateRegistration.h" />
+    <ClInclude Include="Dynasty Engine\Scene\CommandVisualizerRender.h" />
+    <ClInclude Include="Dynasty Engine\Scene\Scene.h" />
+    <ClInclude Include="Dynasty Engine\Scene\SceneRegistrationBroker.h" />
+    <ClInclude Include="Dynasty Engine\Terrain\CellIterator.h" />
+    <ClInclude Include="Dynasty Engine\Terrain\TerrainCell.h" />
+    <ClInclude Include="Dynasty Engine\Terrain\TerrainObject.h" />
+    <ClInclude Include="Test Game\Objects\Box.h" />
+    <ClInclude Include="Test Game\Objects\Bullet.h" />
+    <ClInclude Include="Test Game\Objects\Cottage.h" />
+    <ClInclude Include="Test Game\Objects\Spaceship.h" />
+    <ClInclude Include="Test Game\Other\BulletFactory.h" />
+    <ClInclude Include="Test Game\Other\GodCamera.h" />
+    <ClInclude Include="Test Game\Scenes\IntroScene.h" />
+    <ClInclude Include="Test Game\Scenes\SceneTest.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\dist\AzulCore\lib\AzulCore_Debug.lib" />
+    <Library Include="..\dist\File\lib\File_Debug.lib" />
+    <Library Include="..\dist\GLFW\lib\GLFW_Debug.lib" />
+    <Library Include="..\dist\Math\lib\MathEngine_Debug.lib" />
+    <Library Include="..\dist\SB6\lib\sb6_Debug.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\DynastyDiagram.cd" />
+    <None Include="AlarmSystem.cd" />
+    <None Include="CollisionSystem.cd" />
+    <None Include="Dynasty Engine\Collider\TerrainSystem.cd" />
+    <None Include="InputSystem.cd" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
